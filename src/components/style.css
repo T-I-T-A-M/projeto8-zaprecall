@@ -71,15 +71,14 @@ h1{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    left:50%;
-    width: 300px;
+    width: 100%;
     height: 100%;
 
 }
 
 .game button{
     width: 300px;
-    height: 65px;
+    height: 100%;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -93,6 +92,7 @@ h1{
     color: #333333;
     box-shadow:  0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border-width: 0px;
+    margin: 40px;
 }
 
 .game-header {
@@ -101,7 +101,91 @@ h1{
     align-items: center;
 }
 
+.openQuestions button{
+    width: 300px;
+    height: 131px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 6px;
+    padding-right: 6px;
+    cursor:default;
+}
 
+.openQuestions img{
+    bottom: 0px;
+    right: -115px;
+    position: relative;
+    cursor:pointer;
+}
+
+.openAnswer button{
+    display:flex;
+    flex-direction: column;
+
+}
+
+.choices {
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top:20px;
+}
+
+.choices button {
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 85.17px;
+    height: 37.17px;
+    font-size: 12px;
+    padding:6px;
+    margin: 0px;
+}
+
+
+button .nope {
+    background-color: red;
+}
+
+button .almost {
+    background-color: orange;
+}
+
+button .zap {
+    background-color: green;
+}
+
+.done-nope {
+    color:red;
+    text-decoration: line-through;
+
+}
+
+.done-almost{
+    color:orange;
+    text-decoration: line-through;
+}
+
+.done-zap{
+    color:green;
+    text-decoration: line-through;
+}
+
+
+
+/* FOOTER */
+.footer {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 70px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    bottom: 0px;
+}
 
 
 
