@@ -1,18 +1,19 @@
 
 
 
+export default function OpenButton ( { props, clickAnswer, setClickAnswer } ) {
 
+function renderAnswer() {
+    setClickAnswer(!clickAnswer)
+}
+    console.log(clickAnswer)
 
-export default function OpenButton () {
- 
-    console.log()
     return (
 
         <div className="openQuestions">
-            <button className="openQuestion">
-                O que é JSXO que é JSXO que é JSXO que é JSXO que é JSX
-                O que é JSXO que é JSX
-                <img src="./Images/setinha.png"></img>
+            <button  className="openQuestion">
+                {props}
+                <img onClick ={()=> renderAnswer()} src="./Images/setinha.png"></img>
             </button>
         </div>
 
