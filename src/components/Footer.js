@@ -1,10 +1,15 @@
-export default function Footer () {
+
+
+
+export default function Footer ( {questionsQtd, questionAnswered}) {
+
+
 
 
 
     return (
-        <div className="footer"> 0/4 CONCLUÍDOS </div>
-
+        <div className="footer"> {questionAnswered}/{questionsQtd} CONCLUÍDOS </div>
+            
         
     )
 }

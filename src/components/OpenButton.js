@@ -6,7 +6,7 @@ export default function OpenButton ( { props, clickAnswer, setClickAnswer } ) {
 function renderAnswer() {
     setClickAnswer(!clickAnswer)
 }
-    console.log(clickAnswer)
+
 
     return (
 

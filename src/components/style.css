@@ -118,6 +118,7 @@ h1{
     cursor:pointer;
 }
 
+
 .openAnswer button{
     display:flex;
     flex-direction: column;
@@ -158,18 +159,18 @@ button .zap {
 }
 
 .done-nope {
-    color:red;
+    color:red !important; 
     text-decoration: line-through;
 
 }
 
 .done-almost{
-    color:orange;
+    color:orange !important; 
     text-decoration: line-through;
 }
 
 .done-zap{
-    color:green;
+    color:green !important;
     text-decoration: line-through;
 }
 

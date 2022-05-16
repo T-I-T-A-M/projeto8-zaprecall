@@ -1,6 +1,7 @@
 import Question from "./Question"
-import OpenButton from "./OpenButton"
-import OpenAnswer from "./OpenAnswer"
+import Footer from "./Footer"
+import React from "react"
+
 
 export default function Game () {
 
@@ -49,23 +50,22 @@ export default function Game () {
 
     ]
 
-
+    const [questionAnswered, setQuestionAnswered] = React.useState(0)
 
 
 
 
     return (
-        <div className ="game">
-            <div className ="game-header">
+        <><div className="game">
+            <div className="game-header">
                 <img src="./Images/logo-pequeno.png"></img>
                 <h1>ZapRecall</h1>
             </div>
 
-            {questions.map ((question, index) => <Question key= {index} question={question} />)}
+            {questions.map((question, index) => <Question key={index} question={question} questionAnswered={questionAnswered} setQuestionAnswered={setQuestionAnswered} />)}
 
 
-         </div>
-
-
+        </div> 
+        <Footer questionAnswered={questionAnswered}  questionsQtd={questions.length} /></>
     )
 }
